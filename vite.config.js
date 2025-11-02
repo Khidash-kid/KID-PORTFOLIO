@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:'/PortFolio/',
+  build: {
+    outDir: 'dist', // This tells Vite to output files to 'dist'
+  },
 })
